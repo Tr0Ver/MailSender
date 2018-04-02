@@ -25,7 +25,7 @@ function CreateRanSet() { 			// create a random dataset function
  }  
 }
  
-function FindMaxY (){
+function FindMaxY (){				// Find a max value of dataset elements
   for (i = 0; i < data.length; ++i) 
       if (data[i] > MaxY) MaxY = data[i];
   }
@@ -49,9 +49,6 @@ CreatePoint ();
 textDataSet = stage.text(SpL, SpT+350,'Набор данных: ' + data);
 textDataSet.fontFamily("Arial");
 textDataSet.fontSize("14px");
- 
-//var point = stage.circle(150, 150, 5);
-//point.fill("blue");
 
 textZero = stage.text(SpL-10, SpT+320,"0"); //draw the 0 mark
 textZero.fontFamily("Arial")
